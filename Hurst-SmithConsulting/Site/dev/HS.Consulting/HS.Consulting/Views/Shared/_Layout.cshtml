@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Hurst-Smith Consulting</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "0447e064-7b90-4dd5-afb2-dcfbff007a86"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body>
+    <div>
+        <div class="header-image" style="background-image: url('@ViewBag.MainImage');">
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/"><img src="~/Content/Images/HSC_logo.png" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Services", "Index", "Services")</li>
+                            <li>@Html.ActionLink("Our Story", "Index", "Our-Story")</li>
+                            <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
+                            <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="float: left; padding-left: 109px;">
+                <div class="container  header-image-text">
+                    People powered performance
+                </div>
+                <br />
+                <br />
+                <div class="container body-content"><a href="/" class="learn-more"><img src="~/Content/Images/remove-circle-copy.png" />&nbsp;LEARN MORE</a></div>
+            </div>
+        </div>
+        @RenderBody()
+        <div id="evenly-spaced" class="footer-links">
+            <img src="~/Content/Images/Iris.png" />
+            <img src="~/Content/Images/Wdpm.png" />
+            <img src="~/Content/Images/Naked Ideas logo_Greyscale.png" />
+            <img src="~/Content/Images/StottAndMay.png" />
+            <img src="~/Content/Images/we3-homepage.png" />
+            <img src="~/Content/Images/Initials.png" />
+            <img src="~/Content/Images/Fosbury.png" />
+            <img src="~/Content/Images/QCG.png" />
+            <span class="stretch"></span>
+        </div>
+        <div class="footer-container">
+            @Html.ActionLink("Services", "Index", "Services")
+            @Html.ActionLink("Contact Us", "Index", "Contact")
+            <span style="float:right">
+                <img src="~/Content/Images/Twitter_logo_white.png" />
+                <img src="~/Content/Images/Instagram_simple_icon.svg" />
+                <img src="~/Content/Images/Pinterest.svg" />
+                <img src="~/Content/Images/linkedin.svg" />
+            </span>
+            <hr />
+            <span class="copyright">© Copyright 2015 - 2016 Hurst-Smith Consulting.</span>
+            <span class="copyright" style="float: right">Designed by: Naked Ideas</span>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

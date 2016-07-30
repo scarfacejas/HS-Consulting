@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "HSConsulting"
+  },
+  "hostingPlanName": {
+    "value": "HS.ServicePlan"
+  },
+  "siteLocation": {
+    "value": "West Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "77c7d39e-f823-4e99-b1c1-ce6bc6e3df40"
+  },
+  "resourceGroup": {
+    "value": "HS.ResourceGroup"
+  }
+}
