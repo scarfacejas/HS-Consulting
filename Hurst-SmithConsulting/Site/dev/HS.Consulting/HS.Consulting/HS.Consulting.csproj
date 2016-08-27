@@ -156,9 +156,12 @@
     <Compile Include="Controllers\OurStoryController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\SitemapController.cs" />
+    <Compile Include="Data\ServiceData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Testimonial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +174,9 @@
     <Content Include="Content\Images\bitmap%403x.png" />
     <Content Include="Content\Images\bitmap.png" />
     <Content Include="Content\Images\Close.svg" />
+    <Content Include="Content\Images\done-all%402x.png" />
+    <Content Include="Content\Images\done-all%403x.png" />
+    <Content Include="Content\Images\done-all.png" />
     <Content Include="Content\Images\Engagement.svg" />
     <Content Include="Content\Images\Fosbury.png" />
     <Content Include="Content\Images\Group 12.svg" />
@@ -275,10 +281,11 @@
     <Content Include="Views\Services\EmploymentBenefits.cshtml" />
     <Content Include="Views\Services\Training.cshtml" />
     <Content Include="Views\Services\TalentAttraction.cshtml" />
+    <Content Include="Views\Services\Consultancy.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Clients\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Views\OurStory\" />

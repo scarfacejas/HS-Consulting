@@ -1,0 +1,35 @@
+﻿@model HS.Consulting.Models.Service
+
+@section headerImage {
+    <div class="header-main">
+        <div>
+            <span class="service-header">@Model.Name</span>
+            <img class="header-main-image" src="~/Content/Images/servicesmainbanner_consultancy_1x.svg" />
+        </div>
+    </div>
+}
+
+<div class="sub-header">
+    @foreach (var name in HS.Consulting.Data.ServiceData.ServicesNames)
+    {
+        @Html.ActionLink(name, name.Replace(" ", string.Empty), "Services")
+    }
+</div>
+<div class="services-main">
+    <div class="service-block">
+        <div class="service-description">@Model.Description</div>
+        <div class="service-subtitle">@Model.SubTitle</div>
+        <hr />
+        <div class="service-items">
+            @foreach (var item in Model.Items)
+            {
+                <span class="service-item">
+                    <img src="~/Content/Images/done-all.png" />&nbsp;@item
+                </span>
+            }
+        </div>
+    </div>
+</div>
+<div class="testimonial">
+    <div class="testimonial-text">@Model.Testimonial.Caption</div>
+</div>

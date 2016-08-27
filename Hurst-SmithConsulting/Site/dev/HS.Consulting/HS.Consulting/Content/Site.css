@@ -266,3 +266,139 @@ header {
     font-weight: normal;
     color: #9c9c9c;
 }
+
+.service {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 3.57;
+    color: #606b74;
+    color: var(--slate-grey);
+}
+
+.service-header {
+    font-family: Roboto;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.94;
+    color: #63b2e7;
+    color: var(--soft-blue);
+}
+
+.flex-center-vertically {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-main {
+    height: 394px;
+    position: relative;
+    overflow: auto;
+    background-color: #f3f3f3;
+    padding-left: 113.797px;
+}
+
+    .header-main div {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: auto;
+    }
+
+.header-main-image {
+    padding-left: 45%;
+}
+
+.sub-header {
+    width: 100%;
+    height: 53px;
+    border-bottom: solid 1px #cdcdcd;
+    padding: 17px 0px 17px 104px;
+}
+
+.sub-header,
+.services-main {
+    background-color: #ffffff;
+}
+
+    .sub-header a {
+        padding-right: 20px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        color: #606b74;
+        color: var(--slate-grey);
+    }
+
+.services-main {
+    padding: 69px 0px 69px 0px;
+    width: 100%;
+}
+
+.service-block {
+    margin: auto;
+    width: 581px;
+}
+
+    .service-block hr {
+        width: 100%;
+        height: 2px;
+        color: #cdcdcd;
+        background-color: #cdcdcd;
+    }
+
+.service-description,
+.service-subtitle,
+.service-items {
+    font-family: Roboto;
+    color: #606b74;
+    color: var(--slate-grey);
+}
+
+.service-description {
+    height: 80px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.service-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.08;
+    text-align: center;
+    padding: 12px;
+}
+
+.service-items {
+    font-size: 18px;
+    font-weight: 400;
+    height: 200px;
+}
+
+.service-item {
+    width: 50%;
+    float: left;
+    padding: 0px 32px 15px 0px;
+    padding-right: 10px;
+}
+
+    .service-item img {
+        padding-right: 18px;
+    }
+
+.testimonial {
+    background-color: #292c2f;
+    padding: 83px 0px 0px 83px;
+}
+
+.testimonial-text {
+    font-family: RobotoSlab;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}

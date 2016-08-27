@@ -36,14 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div style="float: left; padding-left: 109px;">
-                <div class="container  header-image-text">
-                    People powered performance
-                </div>
-                <br />
-                <br />
-                <div class="container body-content"><a href="/" class="learn-more"><img src="~/Content/Images/remove-circle-copy.png" />&nbsp;LEARN MORE</a></div>
-            </div>
+            @RenderSection("headerImage")
         </div>
         @RenderBody()
         <div id="evenly-spaced" class="footer-links">
@@ -67,8 +60,9 @@
                 <img src="~/Content/Images/linkedin.svg" />
             </span>
             <hr />
-            <span class="copyright">© Copyright 2015 - 2016 Hurst-Smith Consulting.</span>
+            <span class="copyright">© Copyright 2015 - @DateTime.Now.Year Hurst-Smith Consulting.</span>
             <span class="copyright" style="float: right">Designed by: Naked Ideas</span>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
