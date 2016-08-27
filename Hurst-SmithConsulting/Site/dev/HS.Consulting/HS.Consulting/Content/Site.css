@@ -327,7 +327,7 @@ header {
         padding-right: 20px;
         font-family: Roboto;
         font-size: 16px;
-        font-weight: 700;
+        /*font-weight: 700;*/
         color: #606b74;
         color: var(--slate-grey);
     }
@@ -359,7 +359,7 @@ header {
 }
 
 .service-description {
-    height: 80px;
+    padding-bottom: 12px;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.67;
@@ -431,6 +431,7 @@ header {
     text-align: center;
     color: #606b74;
     color: var(--slate-grey);
+    padding: 0px 12.5% 0px 12.5%;
 }
 
     .service-other-services div {
@@ -447,5 +448,8 @@ header {
         width: 30px;
         height: 30px;
         object-fit: contain;
-        background-color: #000000;
     }
+
+#other-service-name {
+    padding-bottom: 0;
+}

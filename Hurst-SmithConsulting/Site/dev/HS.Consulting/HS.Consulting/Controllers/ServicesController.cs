@@ -45,15 +45,15 @@ namespace HS.Consulting.Controllers
         }
 
         // GET: Services
-        public ActionResult OutsourceHR()
+        public ActionResult OutsourcedHR()
         {
-            return View(DEFAULT_VIEW, _serviceData.GetService("OutsourceHR"));
+            return View(DEFAULT_VIEW, _serviceData.GetService("Outsourced HR"));
         }
 
         // GET: Services
-        public ActionResult EmploymentBenefits()
+        public ActionResult EmployeeBenefits()
         {
-            return View(DEFAULT_VIEW, _serviceData.GetService("EmploymentBenefits"));
+            return View(DEFAULT_VIEW, _serviceData.GetService("Employee Benefits"));
         }
 
         // GET: Services

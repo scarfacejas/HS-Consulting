@@ -12,46 +12,56 @@
 <div class="sub-header">
     @foreach (var name in HS.Consulting.Data.ServiceData.ServicesNames)
     {
-        @Html.ActionLink(name, name.Replace(" ", string.Empty), "Services")
-    }
-</div>
-<div class="services-main">
-    <div class="service-block">
-        <div class="service-description">@Model.Description</div>
-        <div class="service-subtitle">@Model.SubTitle</div>
-        @if (Model.Items.Any())
-        {
-            <hr />
-        }
-        <div class="service-items">
-            @foreach (var item in Model.Items)
-            {
-                <span class="service-item">
-                    <img src="~/Content/Images/done-all.png" />&nbsp;@item
-                </span>
+        <a href="/Services/@name.Replace(" ", string.Empty)">
+            @if (name == Model.Name)            { 
+                @:<span style="font-weight: 700;"> 
             }
+            @name
+            @if (name == Model.Name) { 
+                @:</span> 
+            }
+        </a>
+    }
+    </div>
+        <div class="services-main">
+            <div class="service-block">
+                <div class="service-description">@Model.Description</div>
+                <div class="service-subtitle">@Model.SubTitle</div>
+                @if (Model.Items.Any())
+                {
+                    <hr />
+                }
+                <div class="service-items">
+                    @foreach (var item in Model.Items)
+                    {
+                        <span class="service-item">
+                            <img src="~/Content/Images/done-all.png" />&nbsp;@item
+                        </span>
+                    }
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="testimonial">
-    <div class="testimonial-text">
-        <div>@Model.Testimonial.Caption</div>
-        <div class="testimonial-client">
-            @Model.Testimonial.Client - @Model.Testimonial.Company
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div>@Model.Testimonial.Caption</div>
+                <div class="testimonial-client">
+                    @Model.Testimonial.Client - @Model.Testimonial.Company
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div>
-    <img src="~/Content/Images/services_interimimage_desktop_1x.jpg" />
-</div>
-<div class="standard-div">
-    <div class="other-services">OTHER SERVICES</div>
-    <div id="evenly-spaced" class="service-other-services">
-        @foreach (var item in HS.Consulting.Data.ServiceData.Services.Where(s => s.Name != Model.Name))
-            {
-            <img src="~/Content/Images/@item.ImageUrl" />
-            <div>@item.Name</div>
-        }
-        <span class="stretch"></span>
-    </div>
-</div>
+        <div>
+            <img src="~/Content/Images/services_interimimage_desktop_1x.jpg" />
+        </div>
+        <div class="standard-div">
+            <div class="other-services">OTHER SERVICES</div>
+            <div id="evenly-spaced" class="service-other-services">
+                @foreach (var item in HS.Consulting.Data.ServiceData.Services.Where(s => s.Name != Model.Name))
+                {
+                    <div onclick="location.href = '/Services/@item.Name.Replace(" ", string.Empty)'">
+                        <img src="~/Content/Images/@item.ImageUrl" />
+                        <div id="other-service-name">@item.Name</div>
+                    </div>
+                }
+                <span class="stretch"></span>
+            </div>
+        </div>

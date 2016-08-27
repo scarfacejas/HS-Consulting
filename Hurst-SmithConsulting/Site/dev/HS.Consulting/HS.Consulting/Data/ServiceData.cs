@@ -22,7 +22,7 @@ namespace HS.Consulting.Data
                 Name = "Consultancy",
                 Description = "Collaborating with clients to ensure their people strategy is aligned with their business goals",
                 SubTitle = "Areas",
-                ImageUrl="servicesmainbanner_consultancy_1x.svg",
+                ImageUrl = "servicesmainbanner_consultancy_1x.svg",
                 Items = new string[] {
                     "Defining core skills and capabilities required to deliver against the business goals",
                     "Helping the leadership team define the company purpose, values and behaviours",
@@ -71,15 +71,54 @@ namespace HS.Consulting.Data
                 }
             };
 
+            var outsourcedHr = new Service
+            {
+                Name = "Outsourced HR",
+                Description = "Tailored by client needs, but we essentially take care of all HR initiatives, and more importantly, ensure they are all working bottom up to deliver against the business goals, support the company’s values and build the culture.",
+                SubTitle = "Areas",
+                ImageUrl = "servicesmainbanner_hr_1x.svg",
+                Items = new string[] {
+                    "All employee documentation",
+                    "Advice and mediation for sensitive employee issues",
+                    "Appraisal systems (including online portals)",
+                    "Performance management",
+                    "Cultural & social initiatives"},
+                Testimonial = new Testimonial
+                {
+                    Client = "John Slater",
+                    Company = "Managing Director Naked Ideas",
+                    Caption = "“Naked Ideas is a small, but fast growing creative agency with a smart and highly focussed workforce. Niki joined us in 2015 to fulfil a full spectrum of HR and people-related functions. Her experience has proved invaluable. She has implemented a wide variety of schemes for us to better streamline and improve our hiring processes, looking at staff attraction and retention initiatives as well as encouraging learning and fostering the skills and interests of our existing staff base. She’s very driven and an absolute pleasure to work with.”"
+                }
+            };
+
+            var employeeBenefits = new Service
+            {
+                Name = "Employee Benefits",
+                Description = "It’s important to have a bespoke and flexible benefits package that can be adapted as businesses grow, and which, more importantly stands out from the crowd. We’ll ensure you have the best benefits package in place for now and the future and help you implement it.",
+                SubTitle = string.Empty,
+                ImageUrl = "servicesmainbanner_benefits_1x.svg",
+                Items = new string[0],
+                Testimonial = new Testimonial
+                {
+                    Client = "Georgia Oatway",
+                    Company = "HR Manager Stott & May",
+                    Caption = "“Niki has been working in a consulting capacity with Stott and May for a few months now as we needed an external facilitator to help us put together a strategy and plan specifically within our People and Performance team. Niki’s approach so far has been incredibly insightful and even after the first session of brainstorming and planning, we came away feeling like we’d started to get clarity. Whilst approaching things in a professional manner, Niki is also very personable and whether it be group or one to one work, she creates a relaxed environment that enables people to think and innovate.”"
+                }
+            };
+
             _services.Add(consultancy.Name, consultancy);
             _services.Add(talent.Name, talent);
             _services.Add(engagement.Name, engagement);
+            _services.Add(outsourcedHr.Name, outsourcedHr);
+            _services.Add(employeeBenefits.Name, employeeBenefits);
 
             if (!_initialised)
             {
                 _tempServices.Add(consultancy);
                 _tempServices.Add(talent);
                 _tempServices.Add(engagement);
+                _tempServices.Add(outsourcedHr);
+                _tempServices.Add(employeeBenefits);
             }
 
             if (_serviceNames == null)
