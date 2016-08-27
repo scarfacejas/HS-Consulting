@@ -35,7 +35,7 @@ namespace HS.Consulting.Controllers
         // GET: Services
         public ActionResult TalentAttraction()
         {
-            return View(DEFAULT_VIEW, _serviceData.GetService("TalentAttraction"));
+            return View(DEFAULT_VIEW, _serviceData.GetService("Talent Attraction"));
         }
 
         // GET: Services

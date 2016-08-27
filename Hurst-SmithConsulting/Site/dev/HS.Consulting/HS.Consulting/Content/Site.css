@@ -337,7 +337,8 @@ header {
     width: 100%;
 }
 
-.service-block {
+.service-block,
+.testimonial-text {
     margin: auto;
     width: 581px;
 }
@@ -391,7 +392,7 @@ header {
 
 .testimonial {
     background-color: #292c2f;
-    padding: 83px 0px 0px 83px;
+    /*padding: 83px 0px 0px 83px;*/
 }
 
 .testimonial-text {
@@ -401,4 +402,50 @@ header {
     line-height: 1.67;
     text-align: center;
     color: #ffffff;
+    padding-top: 83px;
 }
+
+.testimonial-client {
+    padding: 61px 0px 61px 0px;
+}
+
+.standard-div {
+    max-width: 1400px;
+    background-color: #f3f3f3;
+}
+
+.other-services {
+    width: 100%;
+    font-family: GillSans;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+    color: #63b2e7;
+    color: var(--soft-blue);
+    padding-top: 26px;
+}
+
+.service-other-services {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #606b74;
+    color: var(--slate-grey);
+}
+
+    .service-other-services div {
+        max-width: 183px;
+        font-family: Roboto;
+        font-size: 18px;
+        text-align: center;
+        color: #606b74;
+        color: var(--slate-grey);
+        padding: 36px 0px 77px 0px;
+    }
+
+    .service-other-services img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        background-color: #000000;
+    }

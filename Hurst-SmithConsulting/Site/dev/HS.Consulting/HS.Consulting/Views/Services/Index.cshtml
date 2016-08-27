@@ -4,7 +4,7 @@
     <div class="header-main">
         <div>
             <span class="service-header">@Model.Name</span>
-            <img class="header-main-image" src="~/Content/Images/servicesmainbanner_consultancy_1x.svg" />
+            <img class="header-main-image" src="~/Content/Images/@Model.ImageUrl" />
         </div>
     </div>
 }
@@ -19,7 +19,10 @@
     <div class="service-block">
         <div class="service-description">@Model.Description</div>
         <div class="service-subtitle">@Model.SubTitle</div>
-        <hr />
+        @if (Model.Items.Any())
+        {
+            <hr />
+        }
         <div class="service-items">
             @foreach (var item in Model.Items)
             {
@@ -31,5 +34,24 @@
     </div>
 </div>
 <div class="testimonial">
-    <div class="testimonial-text">@Model.Testimonial.Caption</div>
+    <div class="testimonial-text">
+        <div>@Model.Testimonial.Caption</div>
+        <div class="testimonial-client">
+            @Model.Testimonial.Client - @Model.Testimonial.Company
+        </div>
+    </div>
+</div>
+<div>
+    <img src="~/Content/Images/services_interimimage_desktop_1x.jpg" />
+</div>
+<div class="standard-div">
+    <div class="other-services">OTHER SERVICES</div>
+    <div id="evenly-spaced" class="service-other-services">
+        @foreach (var item in HS.Consulting.Data.ServiceData.Services.Where(s => s.Name != Model.Name))
+            {
+            <img src="~/Content/Images/@item.ImageUrl" />
+            <div>@item.Name</div>
+        }
+        <span class="stretch"></span>
+    </div>
 </div>

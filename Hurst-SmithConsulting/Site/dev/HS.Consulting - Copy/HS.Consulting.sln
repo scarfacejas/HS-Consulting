@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS.Consulting", "HS.Consulting\HS.Consulting.csproj", "{35C4C408-CFA4-4DCF-9C6E-F78F150E5A61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{9AFA6F4D-DB19-4A2B-B7AC-F63A0AEB5CA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{63E78FE6-E427-4008-BBC6-9FB7554526BE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A4ADACF7-D83E-4E96-AEC5-28C3983C4659}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\HSConsulting.json = PublishScripts\Templates\HSConsulting.json
+		PublishScripts\Templates\HSConsulting.param.dev.json = PublishScripts\Templates\HSConsulting.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C4C408-CFA4-4DCF-9C6E-F78F150E5A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C4C408-CFA4-4DCF-9C6E-F78F150E5A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C4C408-CFA4-4DCF-9C6E-F78F150E5A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C4C408-CFA4-4DCF-9C6E-F78F150E5A61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63E78FE6-E427-4008-BBC6-9FB7554526BE} = {9AFA6F4D-DB19-4A2B-B7AC-F63A0AEB5CA0}
+		{A4ADACF7-D83E-4E96-AEC5-28C3983C4659} = {9AFA6F4D-DB19-4A2B-B7AC-F63A0AEB5CA0}
+	EndGlobalSection
+EndGlobal
