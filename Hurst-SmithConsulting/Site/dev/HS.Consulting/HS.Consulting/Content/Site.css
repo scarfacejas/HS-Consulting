@@ -25,7 +25,7 @@ textarea {
 }
 
 .navbar-brand {
-    width: 148.6px;
+    max-width: 148.6px;
     height: 28.9px;
 }
 
@@ -82,7 +82,7 @@ header {
     padding-top: 79px;
     left: 103px;
     min-height: 263px;
-    width: 665px;
+    max-width: 665px;
     font-family: Roboto;
     font-size: 80px;
     font-weight: 300;
@@ -92,7 +92,7 @@ header {
 }
 
 .learn-more {
-    width: 94px;
+    max-width: 94px;
     height: 25px;
     font-family: Roboto;
     font-size: 14px;
@@ -103,7 +103,7 @@ header {
 }
 
 .jumbotron {
-    width: 1400px;
+    max-width: 1400px;
     height: 406px;
     background-color: #f3f3f3;
 }
@@ -115,7 +115,7 @@ header {
 }
 
 .headline {
-    width: 773.8px;
+    max-width: 773.8px;
     font-family: Roboto;
     font-size: 32px;
     font-weight: 300;
@@ -132,7 +132,7 @@ header {
 
 .absolute-center-column {
     transform: translateY(100%);
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -165,7 +165,7 @@ header {
 }
 
 .call-me-container {
-    width: 513px;
+    max-width: 513px;
     height: 499px;
     border-radius: 3px;
     background-color: #ffffff;
@@ -340,7 +340,7 @@ header {
 .service-block,
 .testimonial-text {
     margin: auto;
-    width: 581px;
+    max-width: 581px;
 }
 
     .service-block hr {
