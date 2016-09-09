@@ -63,6 +63,15 @@ textarea {
     --soft-blue: #63b2e7;
 }
 
+@font-family-base: Roboto;
+@font-size-base: 18px;
+
+div,
+p,
+span {
+    color: #606b74;
+}
+
 /* Sample text styles */
 
 header {
@@ -185,13 +194,17 @@ header {
     padding-top: 10px;
 }
 
-.call-me-text {
+/*.call-me-text {
     font-family: Roboto;
     font-size: 16px;
     font-weight: bold;
     color: #606b74;
     text-align: left;
-}
+}*/
+
+/*.call-me-text {
+    font-size: @font-size-large;
+}*/
 
 .call-me-number {
     font-size: 18px;
