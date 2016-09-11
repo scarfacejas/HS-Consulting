@@ -1,0 +1,29 @@
+﻿.headline-image {
+    background-image: url('/Content/Images/homepage_logobackground_mobile_1x.jpg');
+}
+
+.call-me-outer {
+    background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .headline-image {
+        background-image: url('/Content/Images/homepage_logobackground_tablet_1x.jpg');
+    }
+
+    .call-me-outer {
+        background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .headline-image {
+        background-image: url('/Content/Images/homepage_logobackground_desktop_1x.jpg');
+    }
+
+    .call-me-outer {
+        background-image: url('/Content/Images/homepage_contact_desktop_1x.jpg');
+    }
+}

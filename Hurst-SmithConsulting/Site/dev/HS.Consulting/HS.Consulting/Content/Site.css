@@ -1,13 +1,23 @@
-﻿body {
-    max-width: 1400px;
+﻿:root {
+    --slate-grey: #606b74;
+    --soft-blue: #63b2e7;
+}
+
+body {
     background-color: #d8d8d8;
     margin: auto;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+a {
+    color: var(--soft-blue);
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -24,47 +34,207 @@ textarea {
     max-width: 280px;
 }
 
-.navbar-brand {
-    max-width: 148.6px;
-    height: 28.9px;
+.header-image {
+    height: 426px;
+    background-repeat: no-repeat;
+    background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
+}
+
+.header-image-text {
+    padding-top: 66px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.23;
+    color: #ffffff;
 }
 
 .navbar {
-    max-width: 1399.6px;
-    height: 70px;
     margin-bottom: 0px;
-    /*background-color: rgba(43, 48, 52, 0.8);*/
+}
+
+.navbar-brand {
+    padding-left: 0px;
 }
 
 .navbar-inverse {
     background-color: rgba(43, 48, 52, 0.8);
+    border-style: none;
 }
 
-.navbar-header {
-    left: 109px;
-    top: 20px;
-}
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.57;
+        color: #ffffff;
+    }
 
-.navbar-nav {
-    float: right;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    font-family: ProximaNova;
+.learn-more {
+    padding-top: 38px;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.57;
-    text-align: center;
+    letter-spacing: 0.9px;
     color: #ffffff;
 }
 
-:root {
-    --slate-grey: #606b74;
-    --soft-blue: #63b2e7;
+.headline-image {
+    height: 406px;
+    background-repeat: no-repeat;
 }
 
-@font-family-base: Roboto;
-@font-size-base: 18px;
+.headline {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.41;
+    text-align: center;
+    color: #606b74;
+    color: var(--slate-grey);
+}
+
+.row-image {
+    padding-bottom: 20px;
+}
+
+.row-2-container {
+    background-color: #ffffff;
+}
+
+.col-md-4 {
+    border: solid 1px #eaeaea;
+    height: 144.1px;
+    font-size: 12px;
+}
+
+.say-hello {
+    height: 142.9px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.call-me-container {
+    width: 339px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.07);
+    margin: auto;
+    padding: 22px 31px 0px 31px;
+}
+
+    .call-me-container hr {
+        width: 100%;
+        height: 3px;
+    }
+
+.mail-to {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.footer-links {
+    height: 162px;
+    background-color: #ffffff;
+    /*padding: 34px 121px 0px 121px;*/
+}
+
+.footer-container {
+    /*width: 100%;
+    padding: 30px 100px 22px 100px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2b3034;
+}
+
+    .footer-container a {
+        height: 19px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #ffffff;
+        padding-right: 14px;
+    }
+
+    .footer-container img {
+        padding-left: 24px;
+        height: 14.5px;
+    }
+
+    .footer-container hr {
+        border: solid 1px #4c5053;
+    }
+
+.copyright {
+    font-size: 11px;
+    font-weight: normal;
+    color: #9c9c9c;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-image {
+        height: 465px;
+        background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
+    }
+
+    .header-image-text {
+        padding-top: 56px;
+        font-size: 80px;
+    }
+
+    .headline {
+        font-size: 32px;
+    }
+
+    .col-md-4 {
+        height: 254.1px;
+        font-size: 18px;
+    }
+
+    .say-hello {
+        height: 400px;
+        font-size: 50px;
+    }
+
+    .call-me-container {
+        width: 513px;
+    }
+
+    .mail-to {
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .footer-links {
+        height: 254px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .header-image {
+        background-image: url('/Content/Images/homepage_mainbanner_desktop_1x.jpg');
+    }
+
+    .footer-links {
+        height: 122px;
+    }
+
+    .pull-right-lg {
+        text-align: right;
+    }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 div,
 p,
@@ -81,61 +251,14 @@ header {
     color: #574751;
 }
 
-.header-image {
-    max-width: 1400px;
-    height: 465px;
-    background-repeat: no-repeat;
-}
-
-.header-image-text {
-    padding-top: 79px;
-    left: 103px;
-    min-height: 263px;
-    max-width: 665px;
-    font-family: Roboto;
-    font-size: 80px;
-    font-weight: 300;
-    line-height: 1.23;
-    color: #ffffff;
-    text-align: left;
-}
-
-.learn-more {
-    max-width: 94px;
-    height: 25px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.79;
-    letter-spacing: 0.9px;
-    color: #ffffff;
-}
-
 .jumbotron {
     max-width: 1400px;
     height: 406px;
     background-color: #f3f3f3;
 }
 
-.headline-image {
-    max-width: 1400px;
-    height: 406px;
-    background-repeat: no-repeat;
-}
-
-.headline {
-    max-width: 773.8px;
-    font-family: Roboto;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 1.41;
-    text-align: center;
-    color: #606b74;
-    color: var(--slate-grey);
-}
-
 .absolute-center {
-    transform: translateY(100%);
+    transform: translateY(50%);
     margin: 0 auto;
 }
 
@@ -145,78 +268,19 @@ header {
     text-align: center;
 }
 
-.col-md-4 {
-    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);*/
-    background-color: #ffffff;
-    border: solid 1px #eaeaea;
-    height: 100%;
-    align-content: center;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    color: #606b74;
-    color: var(--slate-grey);
-    width: 33%;
-}
-
-.row-image {
-    padding-bottom: 20px;
-}
-
-.row-2-container {
-    height: 254.1px;
-    margin-left: 0px;
-}
-
 .call-me-outer {
     height: 1034px;
     background-color: #f5f5f5;
 }
-
-.call-me-container {
-    max-width: 513px;
-    height: 499px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.07);
-    margin: auto;
-    /*margin-top: -62px;*/
-    padding: 22px 31px 0px 31px;
-}
-
-    .call-me-container hr {
-        width: 100%;
-        height: 3px;
-    }
 
 .call-me-div {
     float: left;
     padding-top: 10px;
 }
 
-/*.call-me-text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: bold;
-    color: #606b74;
-    text-align: left;
-}*/
-
-/*.call-me-text {
-    font-size: @font-size-large;
-}*/
-
 .call-me-number {
     font-size: 18px;
     font-weight: normal;
-}
-
-.mail-to {
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: normal;
-    letter-spacing: 0.5px;
-    color: #63b2e7;
 }
 
 #evenly-spaced {
@@ -235,13 +299,6 @@ header {
         display: inline-block;
     }
 
-.footer-links {
-    width: 100%;
-    height: 122px;
-    background-color: #ffffff;
-    padding: 34px 121px 0px 121px;
-}
-
 .stretch {
     width: 100%;
     display: inline-block;
@@ -249,39 +306,7 @@ header {
     line-height: 0;
 }
 
-.footer-container {
-    width: 100%;
-    padding: 30px 100px 22px 100px;
-    background-color: #2b3034;
-}
-
-    .footer-container a {
-        height: 19px;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: normal;
-        color: #ffffff;
-        padding-right: 14px;
-    }
-
-    .footer-container img {
-        padding-left: 24px;
-        height: 14.5px;
-    }
-
-    .footer-container hr {
-        border: solid 1px #4c5053;
-    }
-
-.copyright {
-    font-family: Roboto;
-    font-size: 11px;
-    font-weight: normal;
-    color: #9c9c9c;
-}
-
 .service {
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     line-height: 3.57;
@@ -290,7 +315,6 @@ header {
 }
 
 .service-header {
-    font-family: Roboto;
     font-size: 52px;
     font-weight: 400;
     line-height: 1.94;

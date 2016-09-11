@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("CustomCss", false)
     <script type="text/javascript">
         var appInsights = window.appInsights || function (config) {
             function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
@@ -19,49 +20,68 @@
     </script>
 </head>
 <body>
-    <div>
-        <div class="header-image" style="background-image: url('@ViewBag.MainImage');">
-            <div class="navbar navbar-inverse">
-                <div class="container">
-                    <div class="navbar-header">
+    <div class="container">
+        <div class="row header-image">
+            <div class="col-xs-12 vcenter">
+                <div class="row navbar navbar-inverse">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-4">
                         <a class="navbar-brand" href="/"><img src="~/Content/Images/HSC_logo.png" /></a>
                     </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("Services", "Index", "Services")</li>
-                            <li>@Html.ActionLink("Our Story", "Index", "Our-Story")</li>
-                            <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
-                            <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
-                        </ul>
+                    <div class="col-xs-6">
+                        <div class="navbar-collapse collapse navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Services", "Index", "Services")</li>
+                                <li>@Html.ActionLink("Our Story", "Index", "Our-Story")</li>
+                                <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
+                                <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="col-xs-1"></div>
                 </div>
             </div>
             @RenderSection("headerImage")
         </div>
         @RenderBody()
-        <div id="evenly-spaced" class="footer-links">
-            <img src="~/Content/Images/Iris.png" onclick="location.href='http://www.iris-worldwide.com/'" />
-            <img src="~/Content/Images/Wdpm.png" onclick="location.href='http://www.wdmp.co.uk/'" />
-            <img src="~/Content/Images/Naked Ideas logo_Greyscale.png" onclick="location.href='https://nakedideas.com/'" />
-            <img src="~/Content/Images/StottAndMay.png" onclick="location.href='http://stottandmay.com/'" />
-            <img src="~/Content/Images/we3-homepage.png" onclick="location.href='http://we-three.co.uk/'" />
-            <img src="~/Content/Images/Initials.png" onclick="location.href='http://www.worldofinitials.co.uk/'" />
-            <img src="~/Content/Images/Fosbury.png" onclick="location.href='http://www.fosburymarketing.com/'" />
-            <img src="~/Content/Images/QCG.png" onclick="location.href='http://www.qcg.co.uk/'" />
-            <span class="stretch"></span>
+        <div class="row footer-links">
+            <div class="col-lg-6 col-xs-12">
+                <div class="row absolute-center">
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/Iris.png" onclick="location.href='http://www.iris-worldwide.com/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/Wdpm.png" onclick="location.href='http://www.wdmp.co.uk/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/Naked Ideas logo_Greyscale.png" onclick="location.href='https://nakedideas.com/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/StottAndMay.png" onclick="location.href='http://stottandmay.com/'" /></div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="row absolute-center">
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/we3-homepage.png" onclick="location.href='http://we-three.co.uk/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/Initials.png" onclick="location.href='http://www.worldofinitials.co.uk/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/Fosbury.png" onclick="location.href='http://www.fosburymarketing.com/'" /></div>
+                    <div class="col-xs-3"><img class="img-responsive center-block" src="~/Content/Images/QCG.png" onclick="location.href='http://www.qcg.co.uk/'" /></div>
+                </div>
+            </div>
         </div>
-        <div class="footer-container">
-            @Html.ActionLink("Services", "Index", "Services")
-            @Html.ActionLink("Contact Us", "Index", "Contact")
-            <span style="float:right">
-                <img src="~/Content/Images/Twitter_logo_white.png" />
-                <img src="~/Content/Images/Instagram_simple_icon.svg" />
-                <img src="~/Content/Images/Pinterest.svg" />
-                <img src="~/Content/Images/linkedin.svg" />
-            </span>
-            <hr />
-            <span class="copyright">© Copyright 2015 - @DateTime.Now.Year Hurst-Smith Consulting.</span>
-            <span class="copyright" style="float: right">Designed by: Naked Ideas</span>
+        <div class="row footer-container">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        @Html.ActionLink("Contact Us", "Index", "Contact")
+                        @Html.ActionLink("Services", "Index", "Services")
+                    </div>
+                    <div class="col-xs-12 col-lg-6 pull-right-lg">
+                        <img src="~/Content/Images/Twitter_logo_white.png" />
+                        <img src="~/Content/Images/Instagram_simple_icon.svg" />
+                        <img src="~/Content/Images/Pinterest.svg" />
+                        <img src="~/Content/Images/linkedin.svg" />
+                    </div>
+                    <div class="col-xs-12"><br /><hr /></div>
+                    <div class="col-xs-12 col-md-6"><span class="copyright">© Copyright 2015 - @DateTime.Now.Year Hurst-Smith Consulting.</span></div>
+                    <div class="col-xs-12 col-md-6 pull-right-lg"><span class="copyright" style="float: right">Designed by: Naked Ideas</span></div>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
         </div>
     </div>
 

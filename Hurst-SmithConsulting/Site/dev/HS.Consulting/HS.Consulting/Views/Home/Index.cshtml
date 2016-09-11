@@ -2,21 +2,27 @@
     ViewBag.Title = "Home Page";
 }
 
-@section headerImage {
-<div style="float: left; padding-left: 109px;">
-    <div class="container header-image-text">
-        People powered performance
-    </div>
-    <br />
-    <br />
-    <div class="container body-content"><a href="/" class="learn-more"><img src="~/Content/Images/remove-circle-copy.png" />&nbsp;LEARN MORE</a></div>
-</div>
+@section customCss {
+    <link href="@Url.Content("~/Content/Site-home.css")" rel="stylesheet" type="text/css" />
 }
 
-<div class="headline-image" style="background-image: url('/Content/Images/homepage_logobackground_desktop_1x.jpg');">
-    <div style="position: relative; height: 100%; width: 100%;">
-        <div class="headline absolute-center">An independent HR & Talent specialist working collaboratively with businesses to build sustainable growth by harnessing the potential of their people.</div>
+@section headerImage {
+    <div class="col-xs-11 col-sm-offset-1">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 header-image-text text-left">
+                People powered performance
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left learn-more"><a href="/" class="learn-more"><img src="~/Content/Images/remove-circle-copy.png" />&nbsp;LEARN MORE</a></div>
+        </div>
     </div>
+}
+
+<div class="row headline-image">
+    <div class="col-lg-3 col-sm-12"></div>
+    <div class="col-lg-6 headline absolute-center">An independent HR & Talent specialist working collaboratively with businesses to build sustainable growth by harnessing the potential of their people.</div>
+    <div class="col-lg-3 col-sm-12"></div>
 </div>
 
 <div class="row row-2-container">
@@ -65,36 +71,49 @@
         </div>
     </div>
 </div>
-<div class="headline-image call-me-outer" style="background-image: url('/Content/Images/homepage_contact_desktop_1x.jpg');">
-    <div style="height: 400px;"></div>
-    <div class="call-me-container">
-        <div style="float: left">
-            <img style="float:inherit" src="~/Content/Images/group-8.png" />
-            <div class="call-me-div">
-                <div class="call-me-text">
-                    CALL&nbsp;ME
+<div class="row headline-image call-me-outer">
+    <div class="row">
+        <div class="col-xs-12 say-hello absolute-center text-center">
+            Say&nbsp;Hello
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-8 col-xs-12 col-lg-offset-4 col-md-offset-2">
+            <div class="row call-me-container">
+                <div class="col-xs-2 pull-left">
+                    <img src="~/Content/Images/group-8.png" />
+                </div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-7">
+                    <div class="call-me-text">
+                        CALL&nbsp;ME
+                        <br />
+                        <span class="call-me-number">07961&nbsp;103674</span>
+                    </div>
+                </div>
+                <div class="col-xs-2 pull-right">
+                    <img class="call-me-div" src="~/Content/Images/Shape.svg" />
+                </div>
+                <div class="col-xs-12">
+                    <hr />
                     <br />
-                    <span class="call-me-number">07961&nbsp;103674</span>
+                </div>
+                <div class="col-xs-12">
+                    <h4><small><strong>SEND&nbsp;ME&nbsp;A&nbsp;MESSAGE</strong></small></h4>
+                    <br />
+                    <p>
+                        We partner with small to medium sized businesses who don’t need a full time HR & Talent team
+                        but recognise the importance of a clear strategy and tool kit of HR & Talent led initiatives
+                        focused on attracting and retaining the best people. If you are interested in discussing
+                        how we could help you please get in touch.
+                    </p>
+                    <br />
+                    <br />
+                    <a href="mailto:niki@hurst-smithconsulting.co.uk" class="mail-to">niki@hurst-smithconsulting.co.uk</a>
+                    <br />
+                    <br />
                 </div>
             </div>
-        </div>
-        <img class="call-me-div" style="float: right" src="~/Content/Images/Shape.svg" />
-        <div style="padding-top: 90px">
-            <hr />
-        </div>
-        <div>
-            <h4><small><strong>SEND&nbsp;ME&nbsp;A&nbsp;MESSAGE</strong></small></h4>
-            <br />
-            <p>
-                We partner with small to medium sized businesses who don’t need a full time HR & Talent team
-                but recognise the importance of a clear strategy and tool kit of HR & Talent led initiatives
-                focused on attracting and retaining the best people. If you are interested in discussing
-                how we could help you please get in touch.
-            </p>
-            <br />
-            <br />
-            <br />
-            <a href="mailto:niki@hurst-smithconsulting.co.uk" class="mail-to">niki@hurst-smithconsulting.co.uk</a>
         </div>
     </div>
 </div>
