@@ -38,6 +38,7 @@ textarea {
     height: 426px;
     background-repeat: no-repeat;
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
+    background-size: 100% auto;
 }
 
 .header-image-text {
