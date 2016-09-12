@@ -1,0 +1,32 @@
+﻿.header-image {
+    background-image: none;
+    background-color: #f3f3f3;
+}
+
+.service-interimage {
+    background-image: url('/Content/Images/services_interimimage_mobile_1x.jpg');
+    height: 285px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-image {
+        background-image: none;
+    }
+
+    .service-interimage {
+        background-image: url('/Content/Images/services_interimimage_tablet_1x.jpg');
+        height: 283px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-image {
+        background-image: none;
+    }
+
+    .service-interimage {
+        background-image: url('/Content/Images/services_interimimage_desktop_1x.jpg');
+    }
+}
