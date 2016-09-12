@@ -1,11 +1,9 @@
 ﻿.headline-image {
     background-image: url('/Content/Images/homepage_logobackground_mobile_1x.jpg');
-    background-size: 100% auto;
 }
 
 .call-me-outer {
     background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
-    background-size: 100% auto;
 }
 
 /* Small devices (tablets, 768px and up) */

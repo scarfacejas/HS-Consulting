@@ -10,6 +10,10 @@ body {
     font-size: 18px;
 }
 
+div {
+    background-size: 100% auto;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -38,7 +42,6 @@ textarea {
     height: 426px;
     background-repeat: no-repeat;
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
-    background-size: 100% auto;
 }
 
 .header-image-text {
