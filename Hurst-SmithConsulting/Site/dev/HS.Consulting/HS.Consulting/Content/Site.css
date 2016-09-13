@@ -181,8 +181,7 @@ textarea {
     color: var(--soft-blue);
 }
 
-.service-image img
-{
+.service-image img {
     height: 50%;
     width: 50%;
 }
@@ -304,6 +303,11 @@ textarea {
         height: 254px;
     }
 
+    .service-image img {
+        height: 75%;
+        width: 75%;
+    }
+
     .service-header {
         font-size: 52px;
         line-height: 1.94;
@@ -330,6 +334,11 @@ textarea {
 
     .pull-right-lg {
         text-align: right;
+    }
+
+    .service-image img {
+        height: 100%;
+        width: 100%;
     }
 }
 
