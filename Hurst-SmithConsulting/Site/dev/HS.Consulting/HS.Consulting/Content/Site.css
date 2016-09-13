@@ -11,7 +11,7 @@ body {
 }
 
 div {
-    background-size: 100% auto;
+    /*background-size: 100% auto;*/
     background-repeat: no-repeat;
 }
 
@@ -190,10 +190,16 @@ textarea {
     text-align: left;
 }
 
+.service-top {
+    transform: none;
+}
+
 .sub-header {
-    height: 53px;
     border-bottom: solid 1px #cdcdcd;
-    /*padding: 17px 0px 17px 104px;*/
+}
+
+ul {
+    margin-top: 10px;
 }
 
 .sub-header,
@@ -315,6 +321,10 @@ textarea {
 
     .sub-header a {
         font-size: 16px;
+    }
+
+    .service-top {
+        transform: translateY(50%);
     }
 }
 
