@@ -11,7 +11,7 @@ body {
 }
 
 div {
-    /*background-size: 100% auto;*/
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
@@ -40,7 +40,7 @@ textarea {
 }
 
 .header-image {
-    height: 426px;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
 }
@@ -74,7 +74,6 @@ textarea {
     }
 
 .learn-more {
-    padding-top: 38px;
     font-size: 14px;
     letter-spacing: 0.9px;
     color: #ffffff;
@@ -115,7 +114,6 @@ textarea {
 }
 
 .call-me-container {
-    width: 339px;
     border-radius: 3px;
     background-color: #ffffff;
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.07);
@@ -124,12 +122,10 @@ textarea {
 }
 
     .call-me-container hr {
-        width: 100%;
         height: 3px;
     }
 
 .mail-to {
-    font-size: 18px;
     letter-spacing: 0.4px;
 }
 
@@ -273,7 +269,7 @@ ul {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .header-image {
-        height: 465px;
+        height: 463px;
         background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
     }
 
@@ -397,7 +393,6 @@ header {
 }
 
 .call-me-outer {
-    height: 1034px;
     background-color: #f5f5f5;
 }
 
