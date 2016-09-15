@@ -93,6 +93,7 @@ textarea {
 .background-image-unset {
     background-position: center;
     background-size: unset;
+    /*background-size: 100% auto;*/
 }
 
 .row-image {
@@ -186,10 +187,6 @@ textarea {
 
 .pull-right-lg {
     text-align: left;
-}
-
-.service-top {
-    transform: none;
 }
 
 .sub-header {
@@ -318,10 +315,6 @@ ul {
 
     .sub-header a {
         font-size: 16px;
-    }
-
-    .service-top {
-        transform: translateY(50%);
     }
 }
 
