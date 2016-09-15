@@ -6,20 +6,12 @@ using System.Web.Mvc;
 
 namespace HS.Consulting.Controllers
 {
-    public class ContactController : ControllerBase
+    public class ContactController : Controller
     {
-        public override string MainImage
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-
         // GET: Contact
         public ActionResult Index()
         {
-            return View();
+            return View("Contact");
         }
     }
 }

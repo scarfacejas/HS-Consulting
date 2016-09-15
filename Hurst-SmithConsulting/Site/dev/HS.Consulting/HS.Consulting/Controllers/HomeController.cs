@@ -6,10 +6,8 @@ using System.Web.Mvc;
 
 namespace HS.Consulting.Controllers
 {
-    public class HomeController : ControllerBase
+    public class HomeController : Controller
     {
-        public override string MainImage { get { return "/Content/Images/homepage_mainbanner_desktop_1x.jpg"; } }
-
         public ActionResult Index()
         {
             return View();
@@ -17,15 +15,11 @@ namespace HS.Consulting.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
