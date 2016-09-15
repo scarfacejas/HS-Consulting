@@ -40,15 +40,12 @@ textarea {
 }
 
 .header-image {
-    background-size: auto 100%;
-    background-repeat: no-repeat;
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
+    background-size: 105% auto;
 }
 
 .header-image-text {
-    padding-top: 66px;
     font-size: 50px;
-    font-weight: 300;
     line-height: 1.23;
     color: #ffffff;
 }
@@ -269,12 +266,11 @@ ul {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .header-image {
-        height: 463px;
+        background-size: 100% auto;
         background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
     }
 
     .header-image-text {
-        padding-top: 56px;
         font-size: 80px;
     }
 
