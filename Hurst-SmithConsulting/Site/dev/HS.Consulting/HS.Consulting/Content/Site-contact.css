@@ -1,0 +1,26 @@
+﻿.header-image {
+    background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
+}
+
+.call-me-outer {
+    background-image: none;
+    background-color: transparent;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-image {
+        background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
+    }
+
+    .say-hello {
+        height: 200px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-image {
+        background-image: url('/Content/Images/homepage_contact_desktop_1x.jpg');
+    }
+}

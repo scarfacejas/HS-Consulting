@@ -236,6 +236,7 @@
     <Content Include="Content\Images\Twitter_logo_white.png" />
     <Content Include="Content\Images\Wdpm.png" />
     <Content Include="Content\Images\we3-homepage.png" />
+    <Content Include="Content\Site-contact.css" />
     <Content Include="Content\Site-serivces.css" />
     <Content Include="Content\Site-home.css" />
     <Content Include="favicon.ico" />
