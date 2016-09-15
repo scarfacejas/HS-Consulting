@@ -5,7 +5,6 @@
 
 .service-interimage {
     background-image: url('/Content/Images/services_interimimage_mobile_1x.jpg');
-    background-size: unset;
     height: 285px;
 }
 

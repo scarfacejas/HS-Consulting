@@ -46,6 +46,7 @@ textarea {
 
 .header-image-text {
     font-size: 50px;
+    font-weight: 300;
     line-height: 1.23;
     color: #ffffff;
 }
@@ -78,7 +79,6 @@ textarea {
 
 .headline-image {
     height: 406px;
-    background-repeat: no-repeat;
 }
 
 .headline {
@@ -88,6 +88,11 @@ textarea {
     text-align: center;
     color: #606b74;
     color: var(--slate-grey);
+}
+
+.background-image-unset {
+    background-position: center;
+    background-size: unset;
 }
 
 .row-image {
