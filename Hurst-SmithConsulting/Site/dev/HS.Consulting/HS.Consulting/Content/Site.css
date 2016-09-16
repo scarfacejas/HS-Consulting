@@ -131,7 +131,6 @@ textarea {
 }
 
 .footer-links {
-    height: 162px;
     background-color: #ffffff;
 }
 
@@ -238,14 +237,21 @@ ul {
 
 .testimonial-text {
     font-family: "Roboto Slab";
-    font-size: 24px;
     font-weight: 300;
     line-height: 1.67;
-    color: #ffffff;
+    color: var(--slate-grey);
 }
 
 .testimonial-client {
-    padding: 61px 0px 61px 0px;
+    font-size: 24px;
+    color: var(--soft-blue);
+}
+
+.testimonial-company {
+    font-family: "Roboto Slab";
+    font-weight: 500;
+    line-height: 1.67;
+    color: var(--slate-grey);
 }
 
 .standard-div {
@@ -297,10 +303,6 @@ ul {
         letter-spacing: 0.5px;
     }
 
-    .footer-links {
-        height: 254px;
-    }
-
     .service-image img {
         height: 164px;
         width: 164px;
@@ -324,10 +326,6 @@ ul {
 
     .header-image {
         background-image: url('/Content/Images/homepage_mainbanner_desktop_1x.jpg');
-    }
-
-    .footer-links {
-        height: 122px;
     }
 
     .pull-right-lg {
