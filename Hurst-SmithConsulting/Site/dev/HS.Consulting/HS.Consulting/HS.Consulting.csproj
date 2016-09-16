@@ -285,10 +285,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Clients\" />
     <Folder Include="Views\Contact\" />
     <Folder Include="Views\OurStory\" />
     <Folder Include="Views\Sitemap\" />

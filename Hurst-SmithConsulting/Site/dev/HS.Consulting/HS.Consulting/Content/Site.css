@@ -104,10 +104,8 @@ textarea {
     background-color: #ffffff;
 }
 
-.col-md-4 {
+.col-border {
     border: solid 1px #eaeaea;
-    height: 144.1px;
-    font-size: 12px;
 }
 
 .say-hello {
@@ -280,10 +278,10 @@ ul {
         font-size: 32px;
     }
 
-    .col-md-4 {
+    /*.col-md-4 {
         height: 254.1px;
         font-size: 18px;
-    }
+    }*/
 
     .say-hello {
         height: 400px;

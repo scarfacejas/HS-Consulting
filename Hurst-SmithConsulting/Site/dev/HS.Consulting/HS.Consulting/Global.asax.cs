@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HS.Consulting.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +17,9 @@ namespace HS.Consulting
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
             
+            // Trigger the static data to load
+            new ServiceData();
         }
     }
 }
