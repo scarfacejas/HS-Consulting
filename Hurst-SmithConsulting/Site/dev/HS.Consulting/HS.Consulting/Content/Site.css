@@ -249,9 +249,12 @@ ul {
 
 .testimonial-company {
     font-family: "Roboto Slab";
-    font-weight: 500;
     line-height: 1.67;
     color: var(--slate-grey);
+}
+
+.client-testimonials {    
+  background-color: #f3f3f3;
 }
 
 .standard-div {
