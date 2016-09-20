@@ -145,7 +145,7 @@ namespace HS.Consulting.Data
             get { return _serviceNames; }
         }
 
-        public static IEnumerable<Service> Services
+        public static IReadOnlyList<Service> Services
         {
             get { return _readOnlyServices; }
         }

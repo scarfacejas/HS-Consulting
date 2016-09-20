@@ -272,6 +272,17 @@ ul {
     width: 30px;
 }
 
+#our-story-content {
+  line-height: 1.39;
+  color: var(--slate-grey);
+}
+
+.our-story-quote {
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--soft-blue);
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .header-image {
@@ -339,6 +350,10 @@ ul {
         height: 193px;
         width: 193px;
     }
+}
+
+.navbar-collapse {
+    border-color: none;
 }
 
 .vcenter {

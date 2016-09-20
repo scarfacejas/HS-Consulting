@@ -13,5 +13,20 @@ namespace HS.Consulting.Controllers
         {
             return View();
         }
+
+        public PartialViewResult Approach()
+        {
+            return PartialView("_ApproachPartialView");
+        }
+
+        public PartialViewResult About()
+        {
+            return PartialView("_AboutPartialView");
+        }
+
+        public PartialViewResult Partners()
+        {
+            return PartialView("_PartnersPartialView");
+        }
     }
 }

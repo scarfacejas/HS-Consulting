@@ -156,10 +156,13 @@
     <Compile Include="Controllers\OurStoryController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\SitemapController.cs" />
+    <Compile Include="Data\PartnerData.cs" />
     <Compile Include="Data\ServiceData.cs" />
+    <Compile Include="Data\TestimonialData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Partner.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\Testimonial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,6 +240,7 @@
     <Content Include="Content\Images\Wdpm.png" />
     <Content Include="Content\Images\we3-homepage.png" />
     <Content Include="Content\Site-contact.css" />
+    <Content Include="Content\Site-our-story.css" />
     <Content Include="Content\Site-serivces.css" />
     <Content Include="Content\Site-home.css" />
     <Content Include="favicon.ico" />
@@ -286,11 +290,15 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\OurStory\Index.cshtml" />
+    <Content Include="Views\OurStory\_PartnersPartialView.cshtml" />
+    <Content Include="Views\OurStory\_ApproachPartialView.cshtml" />
+    <Content Include="Views\OurStory\_AboutPartialView.cshtml" />
+    <Content Include="Views\Shared\_TestimonialPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Contact\" />
-    <Folder Include="Views\OurStory\" />
     <Folder Include="Views\Sitemap\" />
   </ItemGroup>
   <ItemGroup>

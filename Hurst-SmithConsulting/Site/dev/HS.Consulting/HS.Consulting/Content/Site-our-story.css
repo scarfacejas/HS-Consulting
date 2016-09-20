@@ -1,0 +1,26 @@
+﻿.header-image {
+    background-image: url('/Content/Images/Services_mainbanner_mobile_1x.jpg');
+}
+
+.headline {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-image {
+        background-image: url('/Content/Images/Services_mainbanner_tablet_1x.jpg');
+    }
+
+    .headline {
+        font-size: 24px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-image {
+        background-image: url('/Content/Images/Services_mainbanner_desktop_1x.jpg');
+    }
+}
