@@ -11,21 +11,29 @@ namespace HS.Consulting.Controllers
         // GET: OurStory
         public ActionResult Index()
         {
+            ViewBag.Title = "Our Story - Approach";
+
             return View();
         }
 
         public PartialViewResult Approach()
         {
+            ViewBag.Title = "Our Story - Approach";
+
             return PartialView("_ApproachPartialView");
         }
 
         public PartialViewResult About()
         {
+            ViewBag.Title = "Our Story - About Niki";
+
             return PartialView("_AboutPartialView");
         }
 
         public PartialViewResult Partners()
         {
+            ViewBag.Title = "Our Story - Partners";
+
             return PartialView("_PartnersPartialView");
         }
     }

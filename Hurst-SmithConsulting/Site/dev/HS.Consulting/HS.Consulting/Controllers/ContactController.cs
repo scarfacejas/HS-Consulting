@@ -11,6 +11,8 @@ namespace HS.Consulting.Controllers
         // GET: Contact
         public ActionResult Index()
         {
+            ViewBag.Title = "Contact";
+
             return View("Contact");
         }
     }

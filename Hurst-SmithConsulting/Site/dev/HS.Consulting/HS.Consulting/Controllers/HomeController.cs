@@ -10,6 +10,8 @@ namespace HS.Consulting.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Home";
+
             return View();
         }
 
