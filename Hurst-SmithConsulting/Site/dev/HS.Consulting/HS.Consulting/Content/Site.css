@@ -352,6 +352,8 @@ ul {
     }
 }
 
+.bold { font-weight: bold; }
+
 .navbar-collapse {
     border-color: none;
 }

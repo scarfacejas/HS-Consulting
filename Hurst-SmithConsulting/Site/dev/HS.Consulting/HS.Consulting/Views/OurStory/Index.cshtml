@@ -30,16 +30,13 @@
     <div class="col-xs-11">
         <ul class="list-inline">
             <li>
-                @Ajax.ActionLink("Approach", "Approach",
-                    new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "our-story-content" })
+                <a id="approach" class="bold" href="#">Approach</a>
             </li>
             <li>
-                @Ajax.ActionLink("About Niki", "About",
-                    new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "our-story-content" })
+                <a id="about" href="#">About Niki</a>
             </li>
-            <li>
-                @Ajax.ActionLink("Partners", "Partners",
-                    new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "our-story-content" })
+            <li id="partners">
+                <a id="partners" href="#">Partners</a>
             </li>
         </ul>
     </div>
@@ -68,3 +65,37 @@
 </div>
 
 @Html.Partial("_TestimonialPartialView", HS.Consulting.Data.TestimonialData.Random)
+
+@section scripts {
+    <script type="text/javascript">
+        function selectLink(id) {
+            var selected = $(id);
+            if (!selected.hasClass('bold'))
+                selected.addClass('bold')
+
+            if (id != '#approach')
+                $('#approach').removeClass('bold')
+
+            if (id != '#about')
+                $('#about').removeClass('bold')
+
+            if (id != '#partners')
+                $('#partners').removeClass('bold')
+        }
+
+        $('#approach').click(function () {
+            selectLink('#approach');
+            $('#our-story-content').load("@Html.Raw(Url.Action("Approach"))");
+        });
+
+        $('#about').click(function () {
+            selectLink('#about');
+            $('#our-story-content').load("@Html.Raw(Url.Action("About"))");
+        });
+
+        $('#partners').click(function () {
+            selectLink('#partners');
+            $('#our-story-content').load("@Html.Raw(Url.Action("Partners"))");
+        });
+    </script>
+}
