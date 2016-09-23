@@ -13,6 +13,7 @@ namespace HS.Consulting.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Clients";
+            ViewBag.MetaDescription = "HR and talent consultancy for small to medium sized businesses. Here's a list of some of our clients and what they had to say.";
 
             return View();
         }

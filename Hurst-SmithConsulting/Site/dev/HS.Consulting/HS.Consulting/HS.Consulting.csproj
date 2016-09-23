@@ -295,11 +295,11 @@
     <Content Include="Views\OurStory\_ApproachPartialView.cshtml" />
     <Content Include="Views\OurStory\_AboutPartialView.cshtml" />
     <Content Include="Views\Shared\_TestimonialPartialView.cshtml" />
+    <Content Include="Views\Sitemap\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Contact\" />
-    <Folder Include="Views\Sitemap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
