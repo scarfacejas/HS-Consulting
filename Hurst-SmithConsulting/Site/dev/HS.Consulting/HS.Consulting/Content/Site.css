@@ -358,6 +358,10 @@ ul {
     border-color: none;
 }
 
+.navbar-toggle {
+    margin-right: 0px;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;

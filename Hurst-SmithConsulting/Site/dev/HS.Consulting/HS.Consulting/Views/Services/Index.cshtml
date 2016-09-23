@@ -20,7 +20,7 @@
             </div>
             <div class="col-xs-12 col-md-6">
                 <div class="row service-image">
-                    <div class="col-xs-12 col-md-6 center-block"><img src="~/Content/Images/@Model.ImageUrl" /></div>
+                    <div class="col-xs-12 col-md-6 center-block"><img src="~/Content/Images/@Model.ImageUrl" alt="@Model.Name" /></div>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                             @{  var i = 0;}
                             @foreach (var item in Model.Items.Where(s => (i++ % 2) == 0))
                             {
-                                <div class="col-xs-2"><img src="~/Content/Images/done-all.png" /></div>
+                                <div class="col-xs-2"><img src="~/Content/Images/done-all.png" alt="Tick" /></div>
                                 <div class="col-xs-10">@item</div>
                             }
                         </div>
@@ -98,7 +98,7 @@
                             @{  i = 0;}
                             @foreach (var item in Model.Items.Where(s => (i++ % 2) != 0))
                             {
-                                <div class="col-xs-2"><img src="~/Content/Images/done-all.png" /></div>
+                                <div class="col-xs-2"><img src="~/Content/Images/done-all.png" alt="Tick" /></div>
                                 <div class="col-xs-10">@item</div>
                             }
                         </div>
@@ -112,7 +112,7 @@
         </div>
     </div>
 </div>
-@Html.Partial("_TestimonialPartialView", @Model.Testimonial)
+@Html.Partial("_TestimonialPartialView", HS.Consulting.Data.TestimonialData.Random)
 <div class="row service-interimage background-image-unset">
     <div class="col-xs-12">&nbsp;</div>
 </div>
@@ -132,7 +132,7 @@
             <div class="col-xs-10 col-lg-3">
                 <div class="row services center-block text-center">
                     <div class="col-lg-12 col-xs-3 col-md-5" onclick="location.href = '/Services/@item.Name.Replace(" ", string.Empty)'">
-                        <img src="~/Content/Images/@item.ImageUrl" />
+                        <img src="~/Content/Images/@item.ImageUrl" alt="Hurst-Smith Consulting HR & Talent Specialists - @item.Name" />
                     </div>
                     <div class="col-lg-12 col-xs-9 col-md-7 text-center" onclick="location.href = '/Services/@item.Name.Replace(" ", string.Empty)'">
                         @item.Name
@@ -142,6 +142,7 @@
             <div class="col-xs-1 hidden-lg"><br /></div>
             <div class="clearfix visible-xs"></div>
             <div class="clearfix visible-md"></div>
+            <div class="col-xs-12 visible-xs"><br /></div>
         }
     </div>
     <div class="row">
