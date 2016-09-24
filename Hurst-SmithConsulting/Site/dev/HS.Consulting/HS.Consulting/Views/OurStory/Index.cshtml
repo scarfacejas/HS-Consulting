@@ -30,13 +30,13 @@
     <div class="col-xs-11">
         <ul class="list-inline">
             <li>
-                <a id="approach" class="bold" href="#">Approach</a>
+                <a id="approachLink" href="/OurStory/Approach">Approach</a>
             </li>
             <li>
-                <a id="about" href="#">About Niki</a>
+                <a href="/OurStory/About">About Niki</a>
             </li>
-            <li id="partners">
-                <a id="partners" href="#">Partners</a>
+            <li>
+                <a href="/OurStory/Partners">Partners</a>
             </li>
         </ul>
     </div>
@@ -49,7 +49,7 @@
         <br />
     </div>
     <div id="our-story-content" class="col-xs-12 col-md-10 col-lg-6 col-md-offset-1 col-lg-offset-3">
-        @Html.Partial("_ApproachPartialView")
+        @Html.Partial((string)@ViewBag.OurStoryPartialView)
     </div>
     <div class="col-xs-12">
         <br />
@@ -68,34 +68,22 @@
 
 @section scripts {
     <script type="text/javascript">
-        function selectLink(id) {
-            var selected = $(id);
-            if (!selected.hasClass('bold'))
-                selected.addClass('bold')
 
-            if (id != '#approach')
-                $('#approach').removeClass('bold')
+        $(document).ready(
+            function () {
+                var url = location.href;
+                var found = false;
 
-            if (id != '#about')
-                $('#about').removeClass('bold')
+                $('a').each(function () {
+                    if (url.endsWith(this.href) && this.href.indexOf('OurStory/') > 0) {
+                        this.classList.add('bold');
+                        found = true;
+                    }
+                });
 
-            if (id != '#partners')
-                $('#partners').removeClass('bold')
-        }
+                if(!found)
+                    $('#approachLink').addClass('bold');
+            });
 
-        $('#approach').click(function () {
-            selectLink('#approach');
-            $('#our-story-content').load("@Html.Raw(Url.Action("Approach"))");
-        });
-
-        $('#about').click(function () {
-            selectLink('#about');
-            $('#our-story-content').load("@Html.Raw(Url.Action("About"))");
-        });
-
-        $('#partners').click(function () {
-            selectLink('#partners');
-            $('#our-story-content').load("@Html.Raw(Url.Action("Partners"))");
-        });
     </script>
 }

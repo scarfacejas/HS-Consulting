@@ -11,31 +11,34 @@ namespace HS.Consulting.Controllers
         // GET: OurStory
         public ActionResult Index()
         {
-            ViewBag.Title = "Our Story - Approach";
-            ViewBag.MetaDescription = "HR and talent consultancy for small to medium sized businesses. The story of our HR and people journey.";
-
-            return View();
+            return Approach();
         }
 
-        public PartialViewResult Approach()
+        public ActionResult Approach()
         {
             ViewBag.Title = "Our Story - Approach";
+            ViewBag.MetaDescription = "HR and talent consultancy for small to medium sized businesses. Our approach to our HR and people journey.";
+            ViewBag.OurStoryPartialView = "_ApproachPartialView";
 
-            return PartialView("_ApproachPartialView");
+            return View("Index");
         }
 
-        public PartialViewResult About()
+        public ActionResult About()
         {
             ViewBag.Title = "Our Story - About Niki";
+            ViewBag.MetaDescription = "HR and talent consultancy for small to medium sized businesses. The story of our HR and people journey.";
+            ViewBag.OurStoryPartialView = "_AboutPartialView";
 
-            return PartialView("_AboutPartialView");
+            return View("Index");
         }
 
-        public PartialViewResult Partners()
+        public ActionResult Partners()
         {
             ViewBag.Title = "Our Story - Partners";
+            ViewBag.MetaDescription = "HR and talent consultancy for small to medium sized businesses. Our partners on our HR and people journey.";
+            ViewBag.OurStoryPartialView = "_PartnersPartialView";
 
-            return PartialView("_PartnersPartialView");
+            return View("Index");
         }
     }
 }
