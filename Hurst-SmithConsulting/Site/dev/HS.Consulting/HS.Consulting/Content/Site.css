@@ -356,11 +356,17 @@ ul {
 
 .navbar-collapse {
     border-color: none;
+    border: 0px;
 }
 
-.navbar-toggle {
-    margin-right: 0px;
+.navbar-nav li {
+    text-align: right;
 }
+
+/*.navbar-toggle {
+    margin-right: 0px;
+    border: 0px;
+}*/
 
 .vcenter {
     display: inline-block;
