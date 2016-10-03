@@ -16,11 +16,22 @@
             <div class="row">
                 <div class="col-xs-12"><br /></div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    @partner.Company
+            if (!string.IsNullOrEmpty(partner.ImageUrl))
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="@partner.ImageUrl" alt="@partner.Company" class="img-thumbnail" />
+                    </div>
                 </div>
-            </div>
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>@partner.Company</h3>
+                    </div>
+                </div>
+            }
             <div class="row">
                 <div class="col-xs-12"><br /></div>
             </div>
