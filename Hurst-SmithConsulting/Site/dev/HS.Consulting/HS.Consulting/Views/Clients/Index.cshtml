@@ -108,7 +108,7 @@
 </div>
 
 <div class="row client-testimonials">
-    @foreach (var service in HS.Consulting.Data.ServiceData.Services)
+    @foreach (var testimonial in HS.Consulting.Data.TestimonialData.Testimonials)
     {
         <div class="col-xs-12"><br /></div>
         <div class="col-xs-12">
@@ -116,13 +116,13 @@
                 <div class="col-xs-1 col-md-4"></div>
                 <div class="col-xs-10 col-md-4">
                     <div class="row">
-                        <div class="col-xs-12 testimonial-client">@service.Testimonial.Client</div>
+                        <div class="col-xs-12 testimonial-client">@testimonial.Client</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 testimonial-company"><strong>@service.Testimonial.Company</strong></div>
+                        <div class="col-xs-12 testimonial-company"><strong>@testimonial.Company</strong></div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 testimonial-text">@service.Testimonial.Caption</div>
+                        <div class="col-xs-12 testimonial-text">@testimonial.Caption</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12"><hr /></div>

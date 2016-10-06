@@ -21,6 +21,5 @@ namespace HS.Consulting.Models
         public string SubTitle { get; set; }
         public string ImageUrl { get; set; }
         public IEnumerable<string> Items { get; set; }
-        public Testimonial Testimonial { get; set; }
     }
 }
