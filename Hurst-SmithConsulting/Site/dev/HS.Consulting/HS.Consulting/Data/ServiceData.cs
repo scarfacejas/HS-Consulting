@@ -10,7 +10,6 @@ namespace HS.Consulting.Data
     public class ServiceData
     {
         private readonly Dictionary<string, Service> _services = new Dictionary<string, Service>();
-        private static IReadOnlyList<string> _serviceNames;
         private readonly List<Service> _tempServices = new List<Service>();
         private static IReadOnlyList<Service> _readOnlyServices;
         private static bool _initialised = false;
@@ -106,11 +105,32 @@ namespace HS.Consulting.Data
                 }
             };
 
-            _services.Add(consultancy.Name, consultancy);
-            _services.Add(talent.Name, talent);
-            _services.Add(engagement.Name, engagement);
-            _services.Add(outsourcedHr.Name, outsourcedHr);
-            _services.Add(employeeBenefits.Name, employeeBenefits);
+            var training = new Service
+            {
+                Key = "Training",
+                Name = "Training, Development and Coaching",
+                Description = "Before we create a bespoke training and development programme we’ll work with you to be clear on the key skills and capabilities you need in the business, now and going forwards, and highlight any key gaps you may have.",
+                SubTitle = "Key Expertise",
+                ImageUrl = "servicesmainbanner_training_1x.svg",
+                Items = new string[] {
+                    "Bespoke training programmes by level and department (client servicing, PM, tech, creative)",
+                    "Creating a calendar of ‘learning events’ both internal and external",
+                    "On-going coaching and mentoring",
+                    "Creative ways to coach, train and develop that reflect the needs of our industry"},
+                Testimonial = new Testimonial
+                {
+                    Client = "Georgia Oatway",
+                    Company = "HR Manager Stott & May",
+                    Caption = "“Niki has been working in a consulting capacity with Stott and May for a few months now as we needed an external facilitator to help us put together a strategy and plan specifically within our People and Performance team. Niki’s approach so far has been incredibly insightful and even after the first session of brainstorming and planning, we came away feeling like we’d started to get clarity. Whilst approaching things in a professional manner, Niki is also very personable and whether it be group or one to one work, she creates a relaxed environment that enables people to think and innovate.”"
+                }
+            };
+
+            _services.Add(consultancy.Key, consultancy);
+            _services.Add(talent.Key, talent);
+            _services.Add(engagement.Key, engagement);
+            _services.Add(outsourcedHr.Key, outsourcedHr);
+            _services.Add(employeeBenefits.Key, employeeBenefits);
+            _services.Add(training.Key, training);
 
             if (!_initialised)
             {
@@ -119,10 +139,8 @@ namespace HS.Consulting.Data
                 _tempServices.Add(engagement);
                 _tempServices.Add(outsourcedHr);
                 _tempServices.Add(employeeBenefits);
+                _tempServices.Add(training);
             }
-
-            if (_serviceNames == null)
-                _serviceNames = new ReadOnlyCollection<string>(_services.Keys.ToList());
 
             if (!_initialised)
             {
@@ -131,18 +149,13 @@ namespace HS.Consulting.Data
             }
         }
 
-        public Service GetService(string name)
+        public Service GetService(string key)
         {
-            var service = _services[name];
+            var service = _services[key];
 
             service.Selected = true;
 
             return service;
-        }
-
-        public static IEnumerable<string> ServicesNames
-        {
-            get { return _serviceNames; }
         }
 
         public static IReadOnlyList<Service> Services

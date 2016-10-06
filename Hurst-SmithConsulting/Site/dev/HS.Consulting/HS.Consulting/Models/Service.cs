@@ -7,6 +7,14 @@ namespace HS.Consulting.Models
 {
     public class Service
     {
+        private string _key;
+
+        public string Key
+        {
+            get { return _key ?? Name; }
+            set { _key = value; }
+        }
+
         public string Name { get; set; }
         public bool Selected { get; set; }
         public string Description { get; set; }
