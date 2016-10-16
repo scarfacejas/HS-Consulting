@@ -8,6 +8,10 @@
     height: 285px;
 }
 
+.testimonial-text {
+    color: var(--slate-grey);
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .header-image {

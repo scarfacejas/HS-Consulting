@@ -8,6 +8,7 @@ body {
     margin: auto;
     font-family: Roboto, "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
+    max-width: 1200px;
 }
 
 div {
@@ -41,7 +42,7 @@ textarea {
 
 .header-image {
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
-    background-size: 105% auto;
+    background-size: 100S% auto;
 }
 
 .header-image-text {
@@ -49,6 +50,10 @@ textarea {
     font-weight: 300;
     line-height: 1.23;
     color: #ffffff;
+}
+
+.navbar-collapse {
+    padding-right: 0px;
 }
 
 .navbar {
@@ -66,7 +71,7 @@ textarea {
 
     .navbar-inverse .navbar-nav > li > a {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 300;
         line-height: 1.57;
         color: #ffffff;
     }
@@ -106,6 +111,10 @@ textarea {
 
 .col-border {
     border: solid 1px #eaeaea;
+}
+
+.col-border:hover {
+    background-color: #f3f3f3;
 }
 
 .say-hello {
@@ -184,10 +193,16 @@ textarea {
 
 .pull-right-lg {
     text-align: left;
+    cursor:  pointer;
+}
+
+.pull-right-lg:hover {
+    cursor:  hand;
 }
 
 .sub-header {
     border-bottom: solid 1px #cdcdcd;
+    border-top: solid 1px #cdcdcd;
 }
 
 ul {
@@ -223,7 +238,6 @@ ul {
     font-size: 24px;
     font-weight: 700;
     line-height: 2.08;
-    text-align: center;
     font-weight: bold;
 }
 
@@ -238,8 +252,9 @@ ul {
 .testimonial-text {
     font-family: "Roboto Slab";
     font-weight: 300;
+    font-size: 24px;
     line-height: 1.67;
-    color: var(--slate-grey);
+    color: white;
 }
 
 .testimonial-client {
@@ -283,6 +298,14 @@ ul {
   color: var(--soft-blue);
 }
 
+.hr-talent {
+    color: var(--soft-blue);
+}
+
+.list-inline li {
+    padding-right: 32px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .header-image {
@@ -304,7 +327,7 @@ ul {
     }*/
 
     .say-hello {
-        height: 400px;
+        height: 324px;
         font-size: 50px;
     }
 
@@ -332,10 +355,14 @@ ul {
     }
 }
 
+.send-me-a-message {
+    color: #606b74
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .container {
-        max-width: 1400px;
+        max-width: 1200px;
     }
 
     .header-image {
@@ -350,6 +377,14 @@ ul {
         height: 193px;
         width: 193px;
     }
+}
+
+img {
+    border: 0px;
+}
+
+.navbar {
+    border-radius: 0px;
 }
 
 .bold { font-weight: bold; }

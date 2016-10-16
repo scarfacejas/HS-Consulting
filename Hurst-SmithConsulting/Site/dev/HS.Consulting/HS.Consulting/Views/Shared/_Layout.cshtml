@@ -6,6 +6,7 @@
     <meta name="description" content="@ViewBag.MetaDescription" />
     <meta name="keywords" content="HR, HR Consultancy, Talent, Human Resources, Outsourced HR, Outsourced Human Resources" />
     <title>@ViewBag.Title - HR & Talent Specialists - Hurst-Smith Consulting</title>
+    <link rel="shortcut icon" href="~/Content/Images/homepage_logobackground_mobile_1x.jpg" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     @Styles.Render("~/Content/css")
@@ -29,7 +30,7 @@
                 <div class="row navbar navbar-inverse">
                     <div class="col-xs-1"></div>
                     <div class="col-xs-4">
-                        <a class="navbar-brand" href="/"><img src="~/Content/Images/HSC_logo.png" alt="Hurst-Smith Consulting HR & Talent Specialists" /></a>
+                        <a class="navbar-brand" href="/"><img src="~/Content/Images/Logo-HS.svg" alt="Hurst-Smith Consulting HR & Talent Specialists" /></a>
                     </div>
                     <div class="col-xs-6">
                         <div class="navbar-header">
@@ -145,15 +146,21 @@
                         @Html.ActionLink("Services", "Index", "Services")
                     </div>
                     <div class="col-xs-12 col-lg-6 pull-right-lg">
-                        <img src="~/Content/Images/Twitter_logo_white.png" alt="Hurst-Smith Consulting on Twitter" />
-                        <img src="~/Content/Images/Instagram_simple_icon.svg" alt="Hurst-Smith Consulting on Instagram" />
-                        <img src="~/Content/Images/Pinterest.svg" alt="Hurst-Smith Consulting on Pintrest" />
-                        <img src="~/Content/Images/linkedin.svg" alt="Hurst-Smith Consulting on LinkedIn" />
+                        <a href="https://twitter.com/HSConsu1tancy"><img onclick="locatiion.href='https://twitter.com/HSConsu1tancy'" src="~/Content/Images/Twitter_logo_white.png" alt="Hurst-Smith Consulting on Twitter" /></a>
+                        @*<a href="https://twitter.com/HSConsu1tancy"><img src="~/Content/Images/Instagram_simple_icon.svg" alt="Hurst-Smith Consulting on Instagram" /></a>*@
+                        <a href="https://uk.pinterest.com/hurst1569/"><img onclick="locatiion.href='https://uk.pinterest.com/hurst1569/'" src="~/Content/Images/Pinterest.svg" alt="Hurst-Smith Consulting on Pintrest" /></a>
+                        <a href="https://www.linkedin.com/in/niki-hurst-smith-4ba8b410"><img onclick="locatiion.href='https://www.linkedin.com/in/niki-hurst-smith-4ba8b410'" src="~/Content/Images/linkedin.svg" alt="Hurst-Smith Consulting on LinkedIn" /></a>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-xs-12"><br /><hr /></div>
                     <div class="col-xs-12 col-md-6 copyright">© Copyright 2015 - @DateTime.Now.Year Hurst-Smith Consulting, HR & Talent Specialists</div>
+                </div>
+                <div class="row">
                     <div class="col-xs-12 col-md-6 pull-right-lg copyright">Designed by: Naked Ideas</div>
                 </div>
+            </div>
+
             </div>
             <div class="col-xs-1"></div>
         </div>

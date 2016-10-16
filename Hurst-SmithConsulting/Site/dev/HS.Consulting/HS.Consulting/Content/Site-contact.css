@@ -2,9 +2,15 @@
     background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
 }
 
+body {    
+    background-color: #f5f5f5;
+}
+
 .call-me-outer {
     background-image: none;
     background-color: transparent;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* Small devices (tablets, 768px and up) */

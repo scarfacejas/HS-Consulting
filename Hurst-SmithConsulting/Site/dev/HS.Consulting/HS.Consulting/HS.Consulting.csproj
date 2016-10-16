@@ -239,6 +239,7 @@
     <Content Include="Content\Images\Twitter_logo_white.png" />
     <Content Include="Content\Images\Wdpm.png" />
     <Content Include="Content\Images\we3-homepage.png" />
+    <Content Include="Content\Site-client.css" />
     <Content Include="Content\Site-contact.css" />
     <Content Include="Content\Site-our-story.css" />
     <Content Include="Content\Site-serivces.css" />
@@ -295,6 +296,7 @@
     <Content Include="Views\OurStory\_AboutPartialView.cshtml" />
     <Content Include="Views\Shared\_TestimonialPartialView.cshtml" />
     <Content Include="Views\Sitemap\Index.cshtml" />
+    <Content Include="Views\Shared\_ContactPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
