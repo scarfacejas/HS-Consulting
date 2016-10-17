@@ -16,6 +16,10 @@ div {
     background-repeat: no-repeat;
 }
 
+.container {
+    background-color: #f3f3f3;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -321,11 +325,6 @@ ul {
     .headline {
         font-size: 32px;
     }
-
-    /*.col-md-4 {
-        height: 254.1px;
-        font-size: 18px;
-    }*/
 
     .say-hello {
         height: 324px;
