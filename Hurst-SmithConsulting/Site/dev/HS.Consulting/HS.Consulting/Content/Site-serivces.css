@@ -1,15 +1,10 @@
 ﻿.header-image {
     background-image: none;
-    background-color: #f3f3f3;
 }
 
 .service-interimage {
     background-image: url('/Content/Images/services_interimimage_mobile_1x.jpg');
     height: 285px;
-}
-
-.testimonial-text {
-    color: var(--slate-grey);
 }
 
 /* Small devices (tablets, 768px and up) */

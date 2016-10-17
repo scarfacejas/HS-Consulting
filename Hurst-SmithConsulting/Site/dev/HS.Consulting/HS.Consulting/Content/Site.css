@@ -41,6 +41,7 @@ textarea {
 }
 
 .header-image {
+    background-color: #f3f3f3;
     background-image: url('/Content/Images/homepage_mainbanner_mobile.jpg');
     background-size: 100S% auto;
 }

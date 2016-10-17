@@ -1,3 +1,8 @@
 ﻿.testimonial-text {
     color: var(--slate-grey);
 }
+
+.header-image {
+    background-image: none;
+}
+

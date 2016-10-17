@@ -1,9 +1,6 @@
 ﻿.header-image {
-    background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
-}
-
-body {    
     background-color: #f5f5f5;
+    background-image: url('/Content/Images/homepage_contact_mobile_1x.jpg');
 }
 
 .call-me-outer {
