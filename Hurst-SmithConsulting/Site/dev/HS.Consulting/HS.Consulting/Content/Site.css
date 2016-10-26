@@ -287,6 +287,10 @@ ul {
     color: #63b2e7;
 }
 
+.other-services-link:hover {
+    cursor: pointer;
+}
+
 .services img {
     height: 30px;
     width: 30px;
