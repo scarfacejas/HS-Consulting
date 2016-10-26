@@ -315,7 +315,7 @@ ul {
 @media (min-width: 768px) {
     .header-image {
         background-size: 100% auto;
-        background-image: url('/Content/Images/homepage_contact_tablet_1x.jpg');
+        background-image: url('/Content/Images/homepage_mainbanner_tablet.jpg');
     }
 
     .header-image-text {
