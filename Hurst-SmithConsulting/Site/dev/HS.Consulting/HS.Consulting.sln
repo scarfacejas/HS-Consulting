@@ -15,7 +15,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A4ADACF7-D83E-4E96-AEC5-28C3983C4659}"
 	ProjectSection(SolutionItems) = preProject
 		PublishScripts\Templates\HSConsulting.json = PublishScripts\Templates\HSConsulting.json
-		PublishScripts\Templates\HSConsulting.param.dev.json = PublishScripts\Templates\HSConsulting.param.dev.json
 	EndProjectSection
 EndProject
 Global
